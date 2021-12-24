@@ -19,8 +19,6 @@ from mpl_toolkits.mplot3d import Axes3D
 import cmath
 import colorsys
 def plot_3dp(X,Y,Z,PR,PI, _range=5):
-    #print([cmath.phase(r+1j*i))/cmath.pi/2+0.5 for r,i in zip(PI,PR)])
-    print([colorsys.hsv_to_rgb(cmath.phase(r+1j*i)/cmath.pi/2+0.5,1,1) for r,i in zip(PI,PR)])
     fig = plt.figure(figsize=(6,6))
     ax = Axes3D(fig)
     ax.set_xlabel("X")
